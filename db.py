@@ -5,7 +5,7 @@ Some data is maybe messed up idk
 """
 
 import pymysql
-connection = pymysql.connect(host="host", port="port", user="user", passwd="passwd", database="database")
+connection = pymysql.connect(host="host", port=int("port"), user="user", passwd="passwd", database="database")
 cursor = connection.cursor()
 debug = True
 print("Debug (db.py) : Database Connection Online") 
