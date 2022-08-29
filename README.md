@@ -1,6 +1,6 @@
 # DbPy
 ## What is it?
-#### DbPy is a QSL api that interacts with your database to make the job easyer
+#### DbPy is an python Module that makes qsl database interactions easyer 
 ## How Do i use it?
 ### Set:
 #### To Set a Entry in A Table : `db.set("entry_name","data","table_name")`
