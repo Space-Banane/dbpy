@@ -8,7 +8,7 @@ import pymysql
 connection = pymysql.connect(host="host", port="port", user="user", passwd="passwd", database="database")
 cursor = connection.cursor()
 debug = True
-print("Debug (db.py) : Database Online") 
+print("Debug (db.py) : Database Connection Online") 
  
 def debug(oneoroff):
     if oneoroff == "on":
@@ -23,7 +23,6 @@ def get(name,table):
     """
     Get data out of a table in the database
     """
-
     retrive = f"Select * from {table};" 
     cursor.execute(retrive)
     rows = cursor.fetchall()
@@ -32,17 +31,8 @@ def get(name,table):
         print("Debug (db.py) : returned data ")
     for row in rows:
         rowname = str(row[1])
-        
-        
-        
-        
-        
-        
         name = str(name)
-        
-        
         if name == rowname:
-            
             return row[2]
     raise Exception("Error (db.py) : Could not retrieve data from database")
          
@@ -66,7 +56,6 @@ def createnew(name,data,table):
         if debug == True:
                 print("Debug (db.py) : Creating new Entry")
         insert1 = f"INSERT INTO {table}(Name, VALUE) VALUES('{str(name)}', '{str(data)}' );"
-        
         cursor.execute(insert1) 
         connection.commit()
         return "Created new Entry"
