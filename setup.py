@@ -1,6 +1,6 @@
 from setuptools import setup
 setup(
-    name="DbPy",
+    name="qslpy",
     version="1.5",
     url="https://github.com/Space-Banane/dbpy",
     author="Space-Banane#5444",
@@ -23,7 +23,7 @@ DESCRIPTION = 'QSL Connection for your script'
 
 # Setting up
 setup(
-    name="DbPy",
+    name="qslpy",
     version=VERSION,
     author="Paul",
     description=DESCRIPTION,

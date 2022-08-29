@@ -1,0 +1,9 @@
+README.md
+setup.py
+qslpy/__init__.py
+qslpy/db.py
+qslpy.egg-info/PKG-INFO
+qslpy.egg-info/SOURCES.txt
+qslpy.egg-info/dependency_links.txt
+qslpy.egg-info/requires.txt
+qslpy.egg-info/top_level.txt
